@@ -1,0 +1,181 @@
+html{
+scrollbar-gutter:stable;
+}
+
+body{
+margin:0;
+padding:0;
+font-family:Verdana,Arial,sans-serif;
+background:linear-gradient(120deg,#dfe9f3,#ffffff);
+}
+
+.sayfa{
+width:1200px;
+margin:30px auto;
+background-color:white;
+border:2px solid #333;
+padding:35px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.menu{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+background-color:#eeeeee;
+border:3px solid #333;
+padding:25px;
+border-radius:10px;
+}
+
+.menu a{
+display:inline-block;
+color:white;
+text-decoration:none;
+font-weight:bold;
+font-size:28px;
+background-color:rgb(46, 46, 46);
+padding:18px 30px;
+border-radius:8px;
+transition:0.3s;
+box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+.menu a:hover{
+background-color:darkgrey;
+transform:scale(1.08);
+}
+
+.icerik{
+text-align:center;
+margin-top:50px;
+padding:40px;
+background-color:#f8f8f8;
+border-radius:15px;
+border:1px solid #ccc;
+}
+
+.icerik h2{
+display:inline-block;
+background-color:#333;
+color:white;
+padding:18px 45px;
+border-radius:12px;
+font-size:42px;
+transition:0.3s;
+}
+
+.icerik h2:hover{
+background-color:darkgrey;
+transform:scale(1.05);
+}
+
+.slogan{
+font-size:22px;
+color:#444;
+margin-top:20px;
+}
+
+.kartlar{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.kart{
+width:260px;
+background-color:white;
+border:2px solid #ddd;
+border-radius:12px;
+padding:25px;
+transition:0.3s;
+box-shadow:0 4px 10px rgba(0,0,0,0.12);
+}
+
+.kart:hover{
+transform:translateY(-8px);
+border-color:darkgrey;
+}
+
+.kart h3{
+color:darkgrey;
+font-size:24px;
+}
+
+.kart p{
+font-size:17px;
+color:#555;
+}
+
+.referans-baslik{
+margin-top:50px;
+font-size:30px;
+font-weight:bold;
+color:#333;
+}
+
+.kaydirma-alani{
+width:100%;
+overflow:hidden;
+background-color:#ececec;
+border-top:2px solid #333;
+border-bottom:2px solid #333;
+margin-top:35px;
+padding:25px 0;
+}
+
+.logo-track{
+display:flex;
+width:max-content;
+animation:sonsuzKaydir 15s linear infinite;
+}
+
+.logo-kaydir{
+display:flex;
+align-items:center;
+gap:80px;
+padding-right:80px;
+}
+
+.logo-kaydir img{
+width:120px;
+height:auto;
+transition:0.3s;
+}
+
+.logo-kaydir img:hover{
+transform:scale(1.1);
+}
+
+.razerlogo{
+width:180px;
+}
+
+@keyframes sonsuzKaydir{
+0%{
+transform:translateX(0);
+}
+100%{
+transform:translateX(-50%);
+}
+}
+
+.referans-kutu{
+    text-align: center;
+}
+
+.resimler{
+display:flex;
+justify-content:center;
+margin-top:40px;
+}
+
+.resimler img{
+width:800px;
+max-width:100%;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.25);
+}
