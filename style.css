@@ -5,7 +5,7 @@ scrollbar-gutter:stable;
 body{
 margin:0;
 padding:0;
-font-family:Verdana,Arial,sans-serif;
+font-family:Arial;
 background-color:lightsteelblue;
 background-image:url("images/yazilim.png");
 background-size:cover;
@@ -34,16 +34,21 @@ background-color:lightgray;
 border:3px solid black;
 }
 
+menu a i{
+margin-right: 15px;
+}
+
 .menu a{
 display:inline-block;
 color:white;
 text-decoration:none;
 font-weight:bold;
-font-size:28px;
+font-size:26px;
 padding:18px 30px;
 border-radius:8px;
 background-color:rgb(78, 78, 78);
 transition:0.3s;
+
 }
 
 .menu a:hover{
@@ -209,4 +214,74 @@ line-height:1.8;
 color:black;
 text-align:center;
 font-size:40px;
+}
+
+.iletisim-alani{
+    display:flex;
+    gap:50px;
+}
+
+.sosyal-medya{
+    width:50%;
+}
+
+.sosyal-medya h2{
+    font-size:35px;
+    font-family:Verdana;
+}
+
+.sosyal-medya a{
+    display:block;
+    background-color:darkgrey;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    margin-top:20px;
+    width:200px;
+    border-radius:10px;
+    font-size:25px;
+    transition:0.3s;
+}
+
+.sosyal-medya a:hover{
+    background-color:rgb(98, 98, 98);
+}
+
+.form{
+    width:50%;
+    text-align:center;
+}
+
+.form p{
+    font-size:35px;
+    font-family:Verdana;
+}
+
+.form input{
+    display:block;
+    width:300px;
+    padding:15px;
+    margin:15px auto;
+    border-radius:10px;
+    border:2px solid black;
+    font-size:20px;
+}
+
+.form a{
+    display:inline-block;
+    background-color:green;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:25px;
+    transition:0.3s;
+}
+
+.form a:hover{
+    transform:scale(1.04);
+}
+
+.sosyal-medya i{
+    margin-right:10px;
 }
