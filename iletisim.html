@@ -2,18 +2,26 @@
 <html lang="tr">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="title" content="KAAN YILDIRIM">
+
     <meta name="description" content="KAAN YILDIRIM">
+
     <meta name="keywords" content="Bilgisayar Mühendisi">
 
     <title>KAAN YAZILIM ANONİM ŞİRKETİ</title>
+
     <link rel="icon" href="images/2.png">
+
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -22,8 +30,9 @@
 
         <nav class="menu">
 
-
-            <a href="index.html"><img src="images/2.png" alt="Logo"></a>
+            <a href="index.html">
+                <img src="images/2.png" alt="Logo">
+            </a>
 
             <a href="index.html">
                 <i class="fa-solid fa-house"></i> Anasayfa
@@ -41,7 +50,7 @@
                 <i class="fa-solid fa-image"></i> Galeri
             </a>
 
-            <a href="iletisim.html"class="aktif">
+            <a href="iletisim.html" class="aktif">
                 <i class="fa-solid fa-envelope"></i> İletişim
             </a>
 
@@ -53,35 +62,37 @@
 
                 <h2>BİZE ULAŞIN</h2>
 
-                <a href="https://www.instagram.com/kaanyildirim_35?igsh=MTliZW13djloZ2NlZg%3D%3D&utm_source=qr"target="_blank">
+                <a href="https://www.instagram.com/kaanyildirim_35?igsh=MTliZW13djloZ2NlZg%3D%3D&utm_source=qr" target="_blank">
                     <i class="fa-brands fa-instagram"></i> Instagram
                 </a>
 
-                <a href="https://github.com/808Kaan"target="_blank">
+                <a href="https://github.com/808Kaan" target="_blank">
                     <i class="fa-brands fa-github"></i> GitHub
                 </a>
 
-                <a href="https://www.linkedin.com/in/kaan-y%C4%B1ld%C4%B1r%C4%B1m808/"target="_blank">
+                <a href="https://www.linkedin.com/in/kaan-y%C4%B1ld%C4%B1r%C4%B1m808/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
 
-                <a href="mailto:kaanyldrm2006@gmail.com"target="_blank">
+                <a href="mailto:kaanyldrm2006@gmail.com" target="_blank">
                     <i class="fa-solid fa-envelope"></i> E-Posta
                 </a>
 
             </div>
 
-            <div class="form">
+            <form class="form" id="iletisimForm">
 
                 <p>BİZ SİZE ULAŞALIM</p>
 
-                <input type="text" placeholder="İsim">
-                <input type="text" placeholder="Soyisim">
-                <input type="text" placeholder="Telefon Numarası">
+                <input type="text" id="isim" placeholder="Adınız" required>
 
-                <a href="iletisim.html">SUBMIT</a>
+                <input type="email" id="email" placeholder="E-Posta" required>
 
-            </div>
+                <textarea id="mesaj" placeholder="Mesajınız" required></textarea>
+
+                <button type="submit">Gönder</button>
+
+            </form>
 
         </div>
 
@@ -96,8 +107,7 @@
                     <img src="images/nvidia.png" alt="">
                     <img src="images/intel.png" alt="">
                     <img src="images/razer.png" class="razerlogo" alt="">
-                    <img src="images/Logitech.png" alt="Intel">
-                    
+                    <img src="images/Logitech.png" alt="">
 
                 </div>
 
@@ -108,8 +118,7 @@
                     <img src="images/nvidia.png" alt="">
                     <img src="images/intel.png" alt="">
                     <img src="images/razer.png" class="razerlogo" alt="">
-                    <img src="images/Logitech.png" alt="Intel">
-                    
+                    <img src="images/Logitech.png" alt="">
 
                 </div>
 
@@ -118,6 +127,85 @@
         </div>
 
     </div>
+
+<script>
+
+document.getElementById("iletisimForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let isim = document.getElementById("isim").value;
+
+    let email = document.getElementById("email").value;
+
+    let mesaj = document.getElementById("mesaj").value;
+
+    let token = "8665173746:AAECEr_iFRSvrtzE1vW6upMrUiATxs8gKug";
+
+    let chat_id = "7837769925";
+
+    let text = `
+📩 Yeni Mesaj
+
+👤 İsim: ${isim}
+
+📧 Email: ${email}
+
+💬 Mesaj:
+${mesaj}
+`;
+
+    fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+
+        method: "POST",
+
+        headers: {
+            "Content-Type": "application/json"
+        },
+
+        body: JSON.stringify({
+
+            chat_id: chat_id,
+
+            text: text
+
+        })
+
+    })
+
+    .then(response => response.json())
+
+    .then(data => {
+
+        if(data.ok){
+
+            alert("Mesaj başarıyla gönderildi.");
+
+            document.getElementById("iletisimForm").reset();
+
+        }
+
+        else{
+
+            alert("Telegram mesajı gönderilemedi.");
+
+            console.log(data);
+
+        }
+
+    })
+
+    .catch(error => {
+
+        alert("Bir hata oluştu.");
+
+        console.log(error);
+
+    });
+
+});
+
+</script>
 
 </body>
 
