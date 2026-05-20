@@ -1,183 +1,194 @@
 html{
-scrollbar-gutter: stable;
+    scrollbar-gutter: stable;
 }
 
 body{
-margin:0;
-padding:0;
-font-family:Arial;
-background-color:white;
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    background-image:url("images/background1.png");
+    background-size:cover;
 }
 
 .sayfa{
-width:1500px;
-margin:10px auto;
-padding:20px;
-border-radius:25px;
-background-image:url("images/background1.png");
-background-size:cover;
+    width:1500px;
+    margin:10px auto;
+    padding:20px;
+    border-radius:25px;
+    background-image:url("images/background1.png");
+    background-size:cover;
 }
 
 .menu{
-display:flex;
-align-items:center;
-justify-content:space-around;
-padding:0 25px;
-height:110px;
-border-radius:15px;
-background-color:white;
-box-shadow:0 0 15px lightgray;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    padding:0 25px;
+    height:110px;
+    border-radius:15px;
+    background-color:white;
+    box-shadow:0 0 15px lightgray;
 }
 
 
 .menu img{
-width:105px;
+    width:105px;
 }
 
 .menu img{
-height:120px;
-width:auto;
-object-fit:contain;
-display:block;
+    height:120px;
+    width:auto;
+    object-fit:contain;
+    display:block;
 }
 
 .menu a{
-color:black;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-padding:10px 16px;
-transition:0.3s;
-position:relative;
+    color:black;
+    text-decoration:none;
+    font-size:18px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    padding:10px 16px;
+    transition:0.3s;
+    position:relative;
 }
 
 .menu  img{
-color:white;
-transition:0.3s;
+    color:white;
+    transition:0.3s;
 }
 
 .menu img:hover{
-transform: scale(1.20);
+    transform: scale(1.20);
 
 }
 
 .aktif{
-border-bottom:3px solid blue;
-border-radius: 2px;
-padding-bottom:8px;
+    border-bottom:3px solid blue;
+    border-radius: 2px;
+    padding-bottom:8px;
 }
 
 .menu a i{
-margin-right:8px;
+    margin-right:8px;
 }
 
 .menu a:hover{
-color:blue;
+    color:blue;
 }
 
 .icerik{
-text-align:center;
-margin-top:25px;
-padding:15px;
+    text-align:center;
+    margin-top:25px;
+    padding:15px;
 }
 
 .icerik h1{
-font-size:42px;
-color:white;
-margin-bottom:5px;
+    font-size:42px;
+    letter-spacing: 3px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color:white;
+    margin-bottom:5px;
 }
 
 .slogan{
-font-size:22px;
-color:white;
-margin-top:0;
+    font-size:22px;
+    letter-spacing: 5px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 500;
+    color:white;
+    margin-top:0;
 }
 
 .kartlar{
-display:flex;
-justify-content:center;
-gap:25px;
-margin-top:30px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:30px;
 }
 
 .kart{
-width:270px;
-padding:28px;
-border-radius:20px;
-background:rgba(0,0,255,0.01);
-backdrop-filter:blur(5px);
-box-shadow:0 0 100px rgba(25, 0, 255, 0.200);
-transition:transform 0.45s ease
+    width:270px;
+    padding:28px;
+    border-radius:20px;
+    background:rgba(0,0,255,0.01);
+    backdrop-filter:blur(5px);
+    box-shadow:0 0 100px rgba(25, 0, 255, 0.200);
+    transition:transform 0.45s
 }
 
 .kart h3{
-font-size:24px;
-color:white;
-margin-top:10px;
+    font-size:24px;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    margin-top:10px;
 }
 
 .kart p{
-font-size:17px;
-color:white;
-line-height:1.5;
-transition:0.3s;
+    font-size:17px;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    line-height:1.5;
+    transition:0.3s;
 }
 
 .kart:hover{
-transform:scale(1.01);
+    transform:scale(1.01);
 }
 
 .kart-icon{
-font-size:55px;
-color:blue;
-margin-bottom:12px;
-transition:0.50s;
+    font-size:55px;
+    color:blue;
+    margin-bottom:12px;
+    transition:0.50s;
 }
 
 .kart-icon:hover{
-transform:scale(1.09);
-color:lightskyblue;
+    transform:scale(1.09);
+    color:lightskyblue;
 }
 
 .referans-kutu{
-text-align:center;
-margin-top:25px;
+    text-align:center;
+    margin-top:25px;
 }
 
 .referans-baslik{
-font-size:28px;
-font-weight:bold;
-color:white;
+    font-size:28px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+    color:white;
 }
 
 .kaydirma-alani{
-overflow:hidden;
-margin-top:20px;
-padding:15px;
-background-color:white;
-border-radius:15px;
-box-shadow:0 0 10px lightgray;
+    overflow:hidden;
+    margin-top:20px;
+    padding:15px;
+    background-color:white;
+    border-radius:15px;
+    box-shadow:0 0 10px lightgray;
 }
 
 .logo-track{
-display:flex;
-width:max-content;
-animation:sonsuzKaydir 15s linear infinite;
+    display:flex;
+    width:max-content;
+    animation:sonsuzKaydir 15s linear infinite;
 }
 
 .logo-kaydir{
-display:flex;
-align-items:center;
-gap:80px;
-padding-right:80px;
+    display:flex;
+    align-items:center;
+    gap:80px;
+    padding-right:80px;
 }
 
 .logo-kaydir img{
-width:100px;
+    width:100px;
 }
 
 .razerlogo{
-width:150px;
+    width:150px;
 }
 
 @keyframes sonsuzKaydir{
@@ -190,261 +201,278 @@ transform:translateX(-50%);
 }
 
 .resimler{
-display:flex;
-justify-content:center;
-margin-top:40px;
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
 }
 
 .resimler img{
-width:800px;
-max-width:100%;
-border-radius:15px;
+    width:800px;
+    max-width:100%;
+    border-radius:15px;
 }
 .hakkimizda-alani{
-display:flex;
-gap:25px;
-align-items:flex-start;
-margin-top:50px;
+    display:flex;
+    gap:25px;
+    align-items:flex-start;
+    margin-top:50px;
 }
 
 .hakkimizda-sol{
-width:58%;
+    width:58%;
 }
 
 .hakkimizda-sag{
-width:42%;
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:25px;
+    width:42%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
 }
 
 .hakkimizda_baslik{
-color:blue;
-border-left:2px solid blue;
-padding-left:10px;
-margin-left:10px;
-font-size:32px;
-font-weight:bold;
-text-align:left;
-margin-bottom:10px;
+    color:blue;
+    border-left:2px solid blue;
+    font-family:'Courier New', Courier, monospace;
+    padding-left:10px;
+    margin-left:10px;
+    font-size:40px;
+    letter-spacing: 2px;
+    font-weight:bold;
+    text-align:left;
+    margin-bottom:10px;
 }
 
 .hakkimizda-sol h1{
-color:white;
-font-size:36px;
-border-left:2px solid blue;
-padding-left:10px;
-margin-left:10px;
-font-weight:700;
-letter-spacing:1px;
-margin-bottom:20px;
-line-height:1.3;
+    color:white;
+    font-size:36px;
+    border-left:2px solid blue;
+    font-family:'Courier New', Courier, monospace;
+    padding-left:10px;
+    margin-left:10px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:20px;
+    line-height:1.3;
 }
 
 .hakkimizda{
-color:rgba(255,255,255,0.85);
-padding:10px 0;
-font-size:16px;
-border-left:2px solid blue;
-padding-left:10px;
-margin-left:10px;
-font-weight:400;
-text-align:justify;
-line-height:1.7;
+    color:rgba(255,255,255,0.85);
+    font-family:'Courier New', Courier, monospace;
+    padding:10px 0;
+    font-size:17px;
+    border-left:2px solid blue;
+    padding-left:10px;
+    margin-left:10px;
+    font-weight:600;
+    text-align:justify;
+    line-height:1.7;
 }
 
 .hakkimizda-kart{
-background:rgba(0,0,255,0.01);
-backdrop-filter:blur(2px);
-padding:45px 25px;
-border-radius:18px;
-text-align:center;
-transition:0.3s;
-min-height:230px;
+    background:rgba(0,0,255,0.01);
+    backdrop-filter:blur(2px);
+    padding:45px 25px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.3s;
+    min-height:230px;
 }
 
 .hakkimizda-kart:hover{
-transform:scale(1.03);
+    transform:scale(1.03);
 }
 
 .hakkimizda-kart i{
-font-size:55px;
-color:blue;
-margin-bottom:18px;
+    font-size:55px;
+    color:blue;
+    margin-bottom:18px;
 }
 
 .hakkimizda-kart h3{
-color:white;
-font-family:'Poppins',sans-serif;
-font-size:24px;
-font-weight:600;
-letter-spacing:1px;
-margin-bottom:12px;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:12px;
 }
 
 .hakkimizda-kart p{
-font-size:17px;
-color:white;
-line-height:1.6;
+    font-family:'Courier New', Courier, monospace;
+    font-size:17px;
+    color:white;
+    line-height:1.6;
 }
 
 .iletisim-alani{
-display:flex;
-margin-top:50px;
+    display:flex;
+    margin-top:50px;
 }
 
 .sosyal-medya{
-width:50%;
-display:flex;
-flex-direction:column;
+    width:50%;
+    display:flex;
+    flex-direction:column;
 }
 
 .sosyal-medya h2{
-font-size:35px;
+    font-size:35px;
 }
 
 .sosyal-medya a{
-background:rgba(0,0,255,0.08);
-backdrop-filter:blur(10px);
-color:white;
-text-decoration:none;
-padding:15px;
-margin-top:20px;
-width:220px;
-border-radius:10px;
-font-size:25px;
+    background:rgba(0,0,255,0.08);
+    backdrop-filter:blur(10px);
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    margin-top:20px;
+    width:220px;
+    border-radius:10px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size:25px;
 }
 
 .sosyal-medya a:hover{
-background-color:darkblue;
-scale: 1.01;
-transition: 0.3s;
+    background-color:darkblue;
+    scale: 1.01;
+    transition: 0.3s;
 }
 
 .sosyal-medya h2{
-color: white;
-margin-left:10px
+    color: white;
+    margin-left:10px;
+    font-family:'Courier New', Courier, monospace;
+    letter-spacing: 3px;
 }
 
 .sosyal-medya i{
-margin-right:10px;
+    margin-right:10px;
+    
 }
 
 .form{
-width:50%;
-text-align:center;
-display:flex;
-flex-direction:column;
-align-items:center;
+    width:50%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .form p{
-font-size:35px;
-font-weight:bold;
-color:white;
+    font-size:35px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    color:white;
 }
 
 .form input{
-width:300px;
-padding:15px;
-margin:15px auto;
-border-radius:10px;
-border:2px solid gray;
-font-size:20px;
+    width:300px;
+    padding:15px;
+    margin:15px auto;
+    border-radius:10px;
+    border:2px solid gray;
+    font-size:20px;
 }
 
 .form a{
-background:rgba(0,0,255,0.05);
-backdrop-filter:blur(3px);;
-color:white;
-text-decoration:none;
-padding:15px 30px;
-border-radius:10px;
-font-size:18px;
+    background:rgba(0,0,255,0.05);
+    backdrop-filter:blur(3px);;
+    color:white;
+    text-decoration:none;
+    font-family:'Courier New', Courier, monospace;
+    padding:15px 30px;
+    border-radius:10px;
+    font-size:18px;
 }
 
 .form a:hover{
-background-image:url("images/space.gif");
-background-size:cover;
-background-position: center;
+    background-image:url("images/space.gif");
+    background-size:cover;
+    background-position: center;
 }
 
 
 .blogalani{
-padding:40px;
-margin-top:30px;
-border-radius:20px;
-background:rgba(0,0,255,0.01);
-backdrop-filter:blur(0.4px);
+    padding:40px;
+    margin-top:30px;
+    border-radius:20px;
+    background:rgba(0,0,255,0.01);
+    backdrop-filter:blur(0.4px);
 }
 
 .blogbaslik{
-border-left: 2px solid blue;
-padding: 10px;
-text-align: left;
-font-size:42px;
-color:white;
-margin-bottom:8px;
+    border-left: 2px solid blue;
+    padding: 10px;
+    text-align: left;
+    font-size:42px;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    margin-bottom:8px;
 }
 
 .blogslogan{
-text-align:left;
-padding: 10px;
-font-size:20px;
-color:rgb(216, 216, 216);
-margin-bottom:35px;
+    text-align:left;
+    padding: 10px;
+    font-size:20px;
+    font-family:'Courier New', Courier, monospace;
+    color:rgb(216, 216, 216);
+    margin-bottom:35px;
 }
 
 .haberkart{
-background:rgba(0,0,255,0.1);
-backdrop-filter:blur(5px);
-padding:25px;
-margin-bottom:25px;
-border-radius:16px;
-transition:0.30s;
+    background:rgba(0,0,255,0.1);
+    backdrop-filter:blur(5px);
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:16px;
+    transition:0.30s;
 }
 
 .haberkart:hover{
-transform:scale(1.01);
-background-color:rgba(255, 255, 255, 0.109);
+    transform:scale(1.01);
+    background-color:rgba(255, 255, 255, 0.109);
 }
 
 .tarih{
-color:white;
-font-size:14px;
-font-weight:bold;
-margin-bottom:10px;
+    color:white;
+    font-size:14px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight:bold;
+    margin-bottom:10px;
 }
 
 .haberkart h2{
-font-size:28px;
-color: white;
-border-bottom: 1px solid blue;
-padding-bottom: 8px;
-margin-top:5px;
-margin-bottom:10px;
+    font-size:28px;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+    border-bottom: 1px solid blue;
+    padding-bottom: 8px;
+    margin-top:5px;
+    margin-bottom:10px;
 }
 
 .haberkart p{
-font-size:18px;
-color:white;
-line-height:1.5;
+    font-size:18px;
+    font-family:'Courier New', Courier, monospace;
+    color:white;
+    line-height:1.5;
 }
 
 .haberkart a{
-margin-top:15px;
-padding:10px 18px;
-border-radius:10px;
-background:rgba(0,0,255,0.1);
-backdrop-filter:blur(2px);
-color:rgb(255, 255, 255);
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
+    margin-top:15px;
+    padding:10px 18px;
+    border-radius:10px;
+    background:rgba(0,0,255,0.1);
+    backdrop-filter:blur(2px);
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
 }
 
 .haberkart a:hover{
-background-color:rgb(0, 0, 255);
+    background-color:rgb(0, 0, 255);
 }
 
 .resimler{
@@ -472,6 +500,7 @@ background-color:rgb(0, 0, 255);
     margin-top:40px;
     margin-bottom:40px;
     font-size:55px;
+    font-family:'Courier New', Courier, monospace;
     font-weight:bold;
     color:white;
 }
